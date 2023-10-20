@@ -1,1 +1,46 @@
 /*  your css code here. If applicable */
+body{
+	background-color: #111111;
+	width: 1024px;
+	height: 1024px;
+	
+	padding-inline: 1%;
+	padding-block: 2%;
+}
+.container{
+	display: grid;
+	grid-template-columns: repeat(64, 25px);
+	grid-template-rows: repeat(64, 25px);
+
+	row-gap: 0.5%;
+	column-gap: 1%;
+}
+.square{
+	width: 100%;
+	height: 100%;
+
+	background-color: #292929;
+}
+.color-1, .color-2, .color-3, .color-4, .color-5{
+	transition: background-color 2.5s linear;
+}
+.color-1:hover{
+	background-color: #0066cc;
+	transition: background-color 0s linear;
+}
+.color-2:hover{
+	background-color: orange;
+	transition: background-color 0s linear;
+}
+.color-3:hover{
+	background-color: pink;
+	transition: background-color 0s linear;
+}
+.color-4:hover{
+	background-color: green;
+	transition: background-color 0s linear;
+}
+.color-5:hover{
+	background-color: lightgoldenrodyellow;
+	transition: background-color 0s linear;
+}
